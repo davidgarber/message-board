@@ -8,7 +8,7 @@ Messageboard.QuestionController = Ember.ObjectController.extend({
       this.set('isEditing', false);
     },
     delete: function() {
-      if(confirm('Are you sure')) {
+      if(confirm('Are you sure?')) {
         this.get('model').destroyRecord();
         this.transitionToRoute('questions');
       }
