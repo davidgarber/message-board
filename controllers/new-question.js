@@ -7,7 +7,7 @@ Messageboard.NewQuestionController = Ember.Controller.extend({
       });
 
       newQuestion.save();
-      this.transitionToToute('questions')
+      this.transitionToRoute('questions');
     }
   }
 });
