@@ -32,12 +32,12 @@
 
 <h2>Answers</h2>
 
+
 <ul>
-{{#each answer in answers}}
-  {{#link-to 'answer' this.id}}{{answer}}{{/link-to}}
+{{#each answer in this.answers}}
+  {{#link-to 'answer' this.id}}{{answer.answer}}{{/link-to}}
 {{/each}}
 </ul>
-
 
 <p>
   {{#link-to 'new-answer' this.id class="btn btn-primary"}}New Answer{{/link-to}}
