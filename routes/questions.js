@@ -1,5 +1,8 @@
 Messageboard.QuestionsRoute = Ember.Route.extend({
   model: function(){
-    return questions;
+    renderTemplate: function() {
+    this.render('questions');
+  },
+    return this.store.find('questions');
   }
 });
