@@ -1,4 +1,4 @@
-Messageboard.QuestionController = Ember.ObjectController.extend({
+Messageboard.QuestionController = Ember.Controller.extend({
   isEditing: false,
   actions: {
     edit: function() {
