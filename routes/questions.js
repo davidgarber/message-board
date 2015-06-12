@@ -3,6 +3,6 @@ Messageboard.QuestionsRoute = Ember.Route.extend({
     renderTemplate: function() {
     this.render('questions');
   },
-    return this.store.find('questions');
+    return this.store.find('question');
   }
 });
